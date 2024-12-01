@@ -1,0 +1,23 @@
+name: Generate a build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build the application
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+
+      # Setup bun
+      - uses: oven-sh/setup-bun@v2
+
+      # Install all dependencies
+      - run: bun install
+
+      # Build the application
+      - run: bun run build
