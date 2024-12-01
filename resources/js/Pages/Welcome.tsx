@@ -44,8 +44,6 @@ export default function Welcome({ auth }: PageProps) {
                     <main className="flex h-full flex-col items-center justify-center gap-8 p-8">
                         <h1>Jose Furtado App</h1>
                         <p>Now with Github webhook</p>
-                        <p>Now testing Github action to build</p>
-                        <p>Another paragraph to test Github action to build</p>
                     </main>
 
                     <footer className="flex items-center justify-center p-8">
